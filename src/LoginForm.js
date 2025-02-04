@@ -20,11 +20,11 @@ const LoginForm = () => {
         const newErrors = {};
 
         if (username.length < 4 || username.length > 30) {
-            newErrors.username = 'The field must be between 4 and 30 characters!';
+            newErrors.username = 'Between 4 and 30 characters!';
         }
 
         if (password.length < 4 || password.length > 30) {
-            newErrors.password = 'The field must be between 4 and 30 characters!';
+            newErrors.password = 'Between 4 and 30 characters!';
         }
 
         setErrors(newErrors);
